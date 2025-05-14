@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión Financiera</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #f0f0f0; }
+    .header { font-size: 1.75rem; font-weight: bold; margin-bottom: 1rem; }
+    .section-title { font-size: 1.25rem; margin-top: 2rem; }
+    .income { color: green; }
+    .expense { color: red; }
+  </style>
+</head>
+<body>
+  <div class="container py-4">
+    <div class="text-center header">Sistema de Gestión Financiera</div>
+
+    <!-- Resumen Financiero -->
+    <div class="section-title">Resumen Financiero</div>
+    <div class="row mb-4">
+      <div class="col-md-4 income">Ingresos Totales: $3,000.00</div>
+      <div class="col-md-4 expense">Gastos Totales: $1,800.00</div>
+      <div class="col-md-4" style="color: blue; font-weight: bold;">Balance: $1,200.00</div>
+    </div>
+
+    <!-- Historial de Transacciones -->
+    <div class="section-title">Historial de Transacciones</div>
+    <table class="table table-bordered table-striped">
+      <thead class="table-light">
+        <tr>
+          <th>#</th>
+          <th>Fecha</th>
+          <th>Tipo</th>
+          <th>Categoría</th>
+          <th>Monto</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2025-05-14</td>
+          <td class="expense">Gasto</td>
+          <td>Alimentos</td>
+          <td>$50.00</td>
+          <td>Compra supermercado</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>2025-05-13</td>
+          <td class="income">Ingreso</td>
+          <td>Salario</td>
+          <td>$3,000.00</td>
+          <td>Pago mensual</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Categorías -->
+    <div class="section-title">Categorías</div>
+    <ul>
+      <li>Gasto: Alimentos, Transporte, Vivienda, Entretenimiento</li>
+      <li>Ingreso: Salario, Freelance, Inversiones</li>
+    </ul>
+
+    <!-- Configuración -->
+    <div class="section-title">Configuración</div>
+    <p>Esta es la sección de configuración. En una implementación completa aquí habría opciones como:</p>
+    <ul>
+      <li>Moneda predeterminada</li>
+      <li>Formato de fecha</li>
+      <li>Copias de seguridad automáticas</li>
+      <li>Tema de la interfaz</li>
+    </ul>
+  </div>
+</body>
+</html>
